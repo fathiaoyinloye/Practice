@@ -52,7 +52,6 @@ public class CountNumberOcurrence{
 	public static	int[] getOccurrenceCount (int[] numbers){
 		ArrayList <Integer> distinctNumbers = new ArrayList <Integer>();
 		distinctNumbers = getDistinctNumber(numbers);
-		System.out.print(Arrays.toString(numbers));
 		int[] countOccurrence = new int[distinctNumbers.size()];
 		for (int count = 0; count < distinctNumbers.size(); count++){
 			for(int counter = 0; counter < numbers.length; counter++){
