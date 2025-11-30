@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b744644a-f8ae-45f8-9a28-ed7329100db2" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/MaximumSubArraySum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculateMoney.java" beforeDir="false" afterPath="$PROJECT_DIR$/CalculateMoney.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/fathia-oyinloye/Documents/Data Structures",
+    "last_opened_file_path": "/home/fathia-oyinloye/Documents/Git Repositories/Practice/LeetCode",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +67,6 @@
       <updated>1764261824971</updated>
       <workItem from="1764261826957" duration="137000" />
       <workItem from="1764393581691" duration="953000" />
-      <workItem from="1764424601669" duration="34000" />
     </task>
     <servers />
   </component>

@@ -19,4 +19,3 @@ public class CalculateMoney{
      return totalMoney;  
     }
     }
-for(int number = 1; number <= input; number++)
