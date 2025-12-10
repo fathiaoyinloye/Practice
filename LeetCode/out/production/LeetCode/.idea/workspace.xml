@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b744644a-f8ae-45f8-9a28-ed7329100db2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CountAndSay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MedianOfSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RomanNumeral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RomanNumeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/RomanNumeral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +36,7 @@
     "Application.CountAndSay.executor": "Run",
     "Application.MaximumSubArraySum.executor": "Run",
     "Application.MedianOfSortedArray.executor": "Run",
+    "Application.Solution.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -52,6 +50,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -99,7 +98,9 @@
       <workItem from="1764662352013" duration="249000" />
       <workItem from="1764876184668" duration="2874000" />
       <workItem from="1764907195039" duration="9612000" />
-      <workItem from="1765044228127" duration="1353000" />
+      <workItem from="1765044228127" duration="3781000" />
+      <workItem from="1765091280167" duration="665000" />
+      <workItem from="1765182311850" duration="2167000" />
     </task>
     <servers />
   </component>
