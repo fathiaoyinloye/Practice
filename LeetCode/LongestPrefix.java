@@ -1,6 +1,6 @@
 public class LongestPrefix{
     public static void main(String... args){
-        String[] words = {"dsug", "tdsfdfghjk", "dsfg"};
+        String[] words = {"cir", "car"};
         System.out.print(getLongestCommonPrefix(words));
     }
 
@@ -18,12 +18,12 @@ public class LongestPrefix{
         String result = "";
         int shortestLength = findLengthOfShortestWord(words);
         for(int count = 0; count < shortestLength; count++){
+
             int index = 0;
             int check = 0;
             for(int counter = 0; counter < words.length; counter++){
                 if(words[index].charAt(count) == words[counter].charAt(count)){
                   check++;
-                
                 }
             }
                     if(check == words.length){
@@ -31,7 +31,9 @@ public class LongestPrefix{
 
               index++;
             }
-            
+                    else break;
+
+
         }
         if (result == "") result = "\"\"";
 

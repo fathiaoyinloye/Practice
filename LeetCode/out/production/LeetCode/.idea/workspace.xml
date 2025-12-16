@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b744644a-f8ae-45f8-9a28-ed7329100db2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/RomanNumeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/RomanNumeral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongestPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/LongestPrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LongestPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/LongestPrefix.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,30 +33,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CountAndSay.executor": "Run",
-    "Application.MaximumSubArraySum.executor": "Run",
-    "Application.MedianOfSortedArray.executor": "Run",
-    "Application.Solution.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/fathia-oyinloye/Documents/Git Repositories/Practice/LeetCode",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CountAndSay.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LongestPrefix.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MaximumSubArraySum.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MedianOfSortedArray.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RomanNumeralII.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fathia-oyinloye/Documents/Git Repositories/Practice/LeetCode&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CountAndSay">
     <configuration name="CountAndSay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CountAndSay" />
@@ -100,7 +104,14 @@
       <workItem from="1764907195039" duration="9612000" />
       <workItem from="1765044228127" duration="3781000" />
       <workItem from="1765091280167" duration="665000" />
-      <workItem from="1765182311850" duration="2167000" />
+      <workItem from="1765182311850" duration="6541000" />
+      <workItem from="1765200525508" duration="801000" />
+      <workItem from="1765257596825" duration="2285000" />
+      <workItem from="1765265643135" duration="264000" />
+      <workItem from="1765265959386" duration="498000" />
+      <workItem from="1765281361717" duration="31000" />
+      <workItem from="1765332648736" duration="1288000" />
+      <workItem from="1765689183917" duration="2275000" />
     </task>
     <servers />
   </component>
