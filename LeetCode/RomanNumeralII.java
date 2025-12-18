@@ -12,7 +12,7 @@ public class RomanNumeralII {
 
 
     public static void main(String[] args) {
-        System.out.println(romanToInt("MMCCCXCIX"));
+        System.out.println(romanToInt("MDCXX"));
     }
 
 
@@ -33,7 +33,7 @@ public class RomanNumeralII {
                     else if (temp == 'C' && romanNumeralCheck == 'D' ||temp == 'C' && romanNumeralCheck == 'M') number -= numbers[index] + numbers[index];
                     temp = romanNumeral[counter];
                     index = counter;
-                    System.out.println(number);
+                   // System.out.println(number);
 
                 break;
             }
