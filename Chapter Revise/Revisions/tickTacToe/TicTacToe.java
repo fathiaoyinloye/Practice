@@ -28,24 +28,21 @@ public class TicTacToe {
         if(row == -1 || column == -1) throw new InvalidInputException();
         else if(grind[row][column] == 'X' || grind[row][column] == 'O') throw new InvalidInputException();
         else {grind[row][column] = player.getElement();
-            changeCurrentPlayer();
             numberOfBoxChosen++;
             boolean result = false;
             if(numberOfBoxChosen >= 5){
-               result =  checkIfPlayerWins(choice);
+               result =  checkIfPlayerWins();
             }
             if(result) gameStatus = GameStatus.WON;
-
+            changeCurrentPlayer();
         }
 
 
     }
-    public boolean checkIfPlayerWins(char choice){
-        boolean result = false;
-        result = gameIsWonByRow(choice);
-        result = gameIsWonByColumn(choice);
-        result = gameIsWonDigonally(choice);
-        return result;
+    public boolean checkIfPlayerWins(){
+        if(gameIsWonByRow() || gameIsWonByColumn() || gameIsWonDigonally()) return true;
+
+        return false;
     }
 
     public void changeCurrentPlayer(){
@@ -104,24 +101,23 @@ public class TicTacToe {
         return grind;
     }
 
-    private boolean gameIsWonByRow(char choice){
+    private boolean gameIsWonByRow(){
             for(int count = 0; count < 3; count++){
                 int check  = 0;
                 for(int counter = 0; counter < 3; counter++){
-                if(grind[count][counter] == player.getElement()) {check++;
-                    System.out.println("played" + player.getElement() + "check " + check);}
+                if(grind[count][counter] == player.getElement()) check++;
                 }
                 if(check == 3) return true;
             }
         return false;
     }
 
-    private boolean gameIsWonByColumn(char choice){
+    private boolean gameIsWonByColumn(){
         int column = 0;
         for(int count = 0; count < 3; count++){
             int check  = 0;
             for(int counter = 0; counter < 3; counter++) {
-                if (grind[counter][column] == choice) check++;
+                if (grind[counter][column] == player.getElement()) check++;
             }
             if(check == 3) return true;
             column++;
@@ -129,9 +125,9 @@ public class TicTacToe {
         return false;
     }
 
-    private boolean gameIsWonDigonally (char choice) {
-        if(grind[0][0] == choice && grind[1][1] == choice && grind[2][2] == choice) return true;
-        else if (grind[0][2] == choice && grind[1][1] == choice && grind[2][0] == choice) return true;
+    private boolean gameIsWonDigonally () {
+        if(grind[0][0] == player.getElement() && grind[1][1] == player.getElement() && grind[2][2] == player.getElement()) return true;
+        else if (grind[0][2] == player.getElement() && grind[1][1] == player.getElement() && grind[2][0] == player.getElement()) return true;
 
         return false;
     }
