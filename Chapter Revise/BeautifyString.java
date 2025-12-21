@@ -26,7 +26,7 @@ public class BeautifyString{
 	
 	}
 	public static void main (String... args){
-	  String sentence = " am a girl.";
+	  String sentence = "i am a girl.";
 	  System.out.println(goodSentence(sentence));
 	}
 
