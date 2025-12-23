@@ -4,7 +4,6 @@ import Revisions.tickTacToe.Exceptions.InvalidInputException;
 
 public class TicTacToe {
     private char[][]  grind= new char[3][3];
-    private int number = 97;
     private Player player;
     private GameStatus gameStatus;
     private int numberOfBoxChosen;
@@ -12,12 +11,9 @@ public class TicTacToe {
 
     public TicTacToe(Player player){
         this.player = player;
+        restartGame();
         gameStatus = GameStatus.ISGOING;
-        for(int count = 0; count < 3; count++){
-            for(int counter = 0; counter < 3; counter++){
-                grind[count][counter] = (char) (number++);
-            }
-        }
+        int number = 1;
     }
 
 
@@ -72,7 +68,21 @@ public class TicTacToe {
         return -1;
     }
 
+    private void changeGameStatusToRestart(){
+        gameStatus = GameStatus.RESTART;
+        restartGame();
+    }
 
+
+    private void restartGame(){
+        int number = 1;
+        for(int count = 0; count < 3; count++){
+            for(int counter = 0; counter < 3; counter++){
+                grind[count][counter] = (char) ('0' + number++);
+
+            }
+        }
+    }
 
 
   public void displayGrind(){

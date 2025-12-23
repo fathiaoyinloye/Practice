@@ -16,9 +16,9 @@ public class TicTacTocTest {
     public void playPlayTestThatAtCreation_TicTacTocGridIsFilledWith_a_z_at_creation() {
         TicTacToe game = new TicTacToe(Player.FIRST);
         String actual = """
-                a       b       c
-                e       f       g
-                h       i       j
+                1       2       3
+                4       5       6
+                7       8       9
                 """;
         // assertEquals(actual, game);
         System.out.println(game);
@@ -36,7 +36,7 @@ public class TicTacTocTest {
     public void testThatFirstPlayerPlays_grindATPositionChangesToO(){
         TicTacToe game = new TicTacToe(Player.FIRST);
         assertEquals(Player.FIRST, game.getPlayer());
-        game.chooseInputPosition('a');
+        game.chooseInputPosition('1');
         assertEquals('O',game.getGrind()[0][0]);
 
     }
@@ -46,7 +46,7 @@ public class TicTacTocTest {
     public void testThatFirstPlayerPlays_grindATPositionChangesToO_playerChangesToNextPlayer(){
         TicTacToe game = new TicTacToe(Player.FIRST);
         assertEquals(Player.FIRST, game.getPlayer());
-        game.chooseInputPosition('a');
+        game.chooseInputPosition('1');
         assertEquals('O',game.getGrind()[0][0]);
         assertEquals(Player.SECOND, game.getPlayer());
 
@@ -57,7 +57,7 @@ public class TicTacTocTest {
     public void playerInputedAnInvaldInputThrowsInvalidInputException(){
         TicTacToe game = new TicTacToe(Player.FIRST);
         assertEquals(Player.FIRST, game.getPlayer());
-        assertThrows(InvalidInputException.class, () -> game.chooseInputPosition('v'));
+        assertThrows(InvalidInputException.class, () -> game.chooseInputPosition('i'));
     }
 
 
@@ -65,7 +65,7 @@ public class TicTacTocTest {
     public void testThatFirstPlayerPlays_nextPlayerTryToPlayInSamePosition_throwInvalidInputException(){
         TicTacToe game = new TicTacToe(Player.FIRST);
         assertEquals(Player.FIRST, game.getPlayer());
-        game.chooseInputPosition('a');
+        game.chooseInputPosition('1');
         assertEquals('O',game.getGrind()[0][0]);
         assertEquals(Player.SECOND, game.getPlayer());
         assertThrows(InvalidInputException.class, () -> game.chooseInputPosition('O'));
@@ -80,15 +80,15 @@ public class TicTacTocTest {
         TicTacToe game = new TicTacToe(Player.FIRST);
         assertEquals(Player.FIRST, game.getPlayer());
         assertEquals(GameStatus.ISGOING, game.getGameStatus());
-        game.chooseInputPosition('a');
+        game.chooseInputPosition('1');
         assertEquals('O',game.getGrind()[0][0]);
         assertEquals(Player.SECOND, game.getPlayer());
         assertThrows(InvalidInputException.class, () -> game.chooseInputPosition('O'));
-        game.chooseInputPosition('e');
-        game.chooseInputPosition('b');
-        game.chooseInputPosition('i');
+        game.chooseInputPosition('5');
+        game.chooseInputPosition('2');
+        game.chooseInputPosition('9');
         assertEquals(Player.FIRST, game.getPlayer());
-        game.chooseInputPosition('c');
+        game.chooseInputPosition('3');
         assertEquals(GameStatus.WON, game.getGameStatus());
 
 
@@ -101,13 +101,13 @@ public class TicTacTocTest {
         TicTacToe game = new TicTacToe(Player.SECOND);
         assertEquals(Player.SECOND, game.getPlayer());
         assertEquals(GameStatus.ISGOING, game.getGameStatus());
-        game.chooseInputPosition('b');
+        game.chooseInputPosition('2');
         assertThrows(InvalidInputException.class, () -> game.chooseInputPosition('X'));
-        game.chooseInputPosition('a');
-        game.chooseInputPosition('e');
-        game.chooseInputPosition('i');
+        game.chooseInputPosition('1');
+        game.chooseInputPosition('5');
+        game.chooseInputPosition('9');
         assertEquals(Player.SECOND, game.getPlayer());
-        game.chooseInputPosition('h');
+        game.chooseInputPosition('8');
         assertEquals(GameStatus.WON, game.getGameStatus());
 
 
@@ -119,13 +119,13 @@ public class TicTacTocTest {
         TicTacToe game = new TicTacToe(Player.SECOND);
         assertEquals(Player.SECOND, game.getPlayer());
         assertEquals(GameStatus.ISGOING, game.getGameStatus());
-        game.chooseInputPosition('a');
+        game.chooseInputPosition('1');
         assertThrows(InvalidInputException.class, () -> game.chooseInputPosition('X'));
-        game.chooseInputPosition('b');
-        game.chooseInputPosition('e');
-        game.chooseInputPosition('f');
+        game.chooseInputPosition('2');
+        game.chooseInputPosition('5');
+        game.chooseInputPosition('6');
         assertEquals(Player.SECOND, game.getPlayer());
-        game.chooseInputPosition('i');
+        game.chooseInputPosition('9');
         assertEquals(GameStatus.WON, game.getGameStatus());
 
 
