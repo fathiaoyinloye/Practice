@@ -1,0 +1,4 @@
+ATOMIC
+@Transactional
+Design Pattern
+System D
