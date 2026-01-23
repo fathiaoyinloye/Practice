@@ -1,0 +1,13 @@
+@NotNull: Field cannot be null.
+@NotBlank: String must not be null and must contain at least one non-whitespace character.
+@Size(min, max): Validates length of strings or size of collections.
+@Email: Ensures a valid email format.
+@Min / @Max: Sets numeric boundaries.
+@Past / @Future: Validates date/time relative to the present. 
+Triggering Validation
+To enforce these rules in a Controller, you must use the @Valid annotation on the incoming request body: 
+java
+@PostMapping("/users")
+public ResponseEntity<String> createUser(@Valid @RequestBody UserDTO user) {
+    return ResponseEntity.ok("Valid user");
+}
