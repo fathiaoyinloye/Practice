@@ -6,7 +6,7 @@ public class Task{
 		
 		for(Object value : arrays){
 
-			if(value instanceof String ) output.add(value);
+			if(value instanceof (Integer) ) output.add(value);
 		}
 	  return output;
 	}
