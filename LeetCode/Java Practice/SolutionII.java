@@ -1,4 +1,4 @@
-public class Solution {
+public class SolutionII {
     public int maxProfit(int[] prices) {
         int maximumProfit = 0;
         int counter = 0;

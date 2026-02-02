@@ -4,10 +4,10 @@ public class Task{
 	public static ArrayList<Object> getIntegers(Object[] arrays){
 		ArrayList<Object> output = new ArrayList<>();
 		
-		for(Object value : arrays){
+		/*for(Object value : arrays){
 
-			if(value instanceof (Integer) ) output.add(value);
-		}
+			if(value instanceof(Integer) ) output.add(value);
+		}*/
 	  return output;
 	}
 
