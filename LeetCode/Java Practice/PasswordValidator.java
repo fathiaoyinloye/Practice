@@ -29,8 +29,6 @@ public class PasswordValidator{
         if(!isDigit) throw new NumberException();
     }
 
-
-
     public static void validateSpecialCharacter(String password){
         boolean isSpecialCharacter = false;
         for(int count = 0; count < password.length(); count++){
@@ -42,11 +40,12 @@ public class PasswordValidator{
         if(!isSpecialCharacter) throw new SpecialCharacterException();
     }
 
-
     public static void validateLength(String password){
        if (password.length() < 8 || password.length() > 20) throw new InvalidLengthException();
     }
     public static void main(String... args) {
+
+
         try {
             System.out.println(checkPasswordValidity("df,"));
 
