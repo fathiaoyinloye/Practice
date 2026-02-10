@@ -90,6 +90,7 @@ public class TicTacTocTest {
         assertEquals(Player.FIRST, game.getPlayer());
         game.chooseInputPosition('3');
         assertEquals(GameStatus.WON, game.getGameStatus());
+        System.out.println(game);
 
 
     }
