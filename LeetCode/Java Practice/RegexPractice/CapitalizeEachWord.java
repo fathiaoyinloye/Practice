@@ -16,6 +16,9 @@ public class CapitalizeEachWord {
         }
         return result;
     }
+
+
+
     public static void main (String... args){
         System.out.println(capitalizeWords("this is a tree"));
     }
